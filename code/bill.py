@@ -20,21 +20,17 @@ def tip_amount(subtotal, pct):
     
     """
     return round(subtotal * pct / 100, 2)
-    pass
 
 
 def grand_total(subtotal, pct):
-    """Return the subtotal plus the tip, rounded to the nearest cent."""
     return round(subtotal + tip_amount(subtotal, pct), 2)
 
 
 def split_evenly(total, people):
-    """Return each person's share of total, rounded to the nearest cent."""
     if people <= 0:
         raise ValueError("people must be greater than 0")
     return round(total / people, 2)
 
 
 def is_generous(pct):
-    """Return True when a tip percent is 20% or more."""
     return pct >= 20
