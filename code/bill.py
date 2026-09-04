@@ -19,6 +19,7 @@ def tip_amount(subtotal, pct):
     10.0
     """
     # TODO: your code here
+    return round(subtotal * pct / 100, 2)
     pass
 
 
