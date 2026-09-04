@@ -2,3 +2,6 @@ Write your reflection here.
 
 See reflection.md for what makes a good reflection — be specific, use the
 terminology from class, and make it actionable.
+Reflecting on my work in bill.py, building this tip calculator showed me how code functions as an input, process, output pipeline. For functions like tip amount and grand total, I passed in variables with specific types, such as floats for monetary amounts and ints for percentages, processed the math using programmatic arithmetic operators, and used return statements to pass back the final rounded output to the caller. In split evenly, I used a conditional if statement paired with a relational operator to check if people was less than or equal to zero, raising a value error to safely catch invalid inputs before performing division.
+
+To ensure the code style was clear and readable for humans, I added docstrings to document how every function behaves and how rounding is handled. I also isolated my demonstration code inside an if name equals main block so that my test suite could import the module cleanly without running example code automatically. My actionable next step is to practice stepping through failing test cases using a debugger and to test my functions against tricky edge cases, like tiny subtotal amounts or zero percent tips, to ensure my calculations and rounding remain accurate.
