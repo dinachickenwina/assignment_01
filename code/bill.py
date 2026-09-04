@@ -55,8 +55,9 @@ def is_generous(pct):
     return pct >= 20
 
 
-# One example: a $50 bill, a 20% tip, split 4 ways.
-bill_subtotal = 50.0
-tip_pct = 20
-total = grand_total(bill_subtotal, tip_pct)
-per_person = split_evenly(total, 4)
+if __name__ == "__main__":
+    # One example: a $50 bill, a 20% tip, split 4 ways.
+    bill_subtotal = 50.0
+    tip_pct = 20
+    total = grand_total(bill_subtotal, tip_pct)
+    per_person = split_evenly(total, 4)
